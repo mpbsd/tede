@@ -1,0 +1,108 @@
+\documentclass[dissertacao]{imeufg}
+% OpÃ§Ãµes da classe imeufg (ao usar mais de uma, separe por vÃ­rgulas)
+%   [tese]         -> Tese de doutorado.
+%   [dissertacao]  -> DissertaÃ§Ã£o de mestrado (padrÃ£o).
+%   [monografia]   -> Monografia de especializaÃ§Ã£o.
+%   [relatorio]    -> Relatírio final de graduaÃ§Ã£o.
+%   [abnt]         -> Usa o estilo "abnt-alf" de citaÃ§Ã£o bibliográfica.
+%   [nocolorlinks] -> Os links de navegaÃ§Ã£o no texto ficam na cor preta.
+%                     Use esta opÃ§Ã£o para gerar o arquivo para impressÃ£o
+%                     da versÃ£o final do seu texto!!!
+%--------------------------------------------------------------------------%
+%[INÍCIO DO DOCUMENTO]-----------------------------------------------------%
+%--------------------------------------------------------------------------%
+\begin{document}
+%--------------------------------------------------------------------------%
+%[AUTOR, TÍTULO E DATA DE DEFESA]------------------------------------------%
+%--------------------------------------------------------------------------%
+\autor{\textless Nome do Autor do Trabalho\textgreater}
+\autorR{\textless Nome Reverso do Autor do Trabalho\textgreater}
+\titulo{\textless TÃ­tulo do Trabalho\textgreater}
+\subtitulo{\textless SubtÃ­tulo do Trabalho\textgreater}
+\cidade{Goiânia}
+\dia{\textless Dia\textgreater} % \dia{03}
+\mes{\textless Mês\textgreater} % \mes{10}
+\ano{\textless Ano\textgreater} % \ano{1985}
+%--------------------------------------------------------------------------%
+%[ORIENTADOR]--------------------------------------------------------------%
+%--------------------------------------------------------------------------%
+\orientador{\textless Nome do Orientador\textgreater}
+\orientadorR{\textless Nome Reverso do Orientador\textgreater}
+%--------------------------------------------------------------------------%
+%[ORIENTADORA]-------------------------------------------------------------%
+%--------------------------------------------------------------------------%
+\orientadora{\textless Nome da Orientadora\textgreater}
+\orientadoraR{\textless Nome Reverso da Orientadora\textgreater}
+%--------------------------------------------------------------------------%
+%[COORIENTADOR]------------------------------------------------------------%
+%--------------------------------------------------------------------------%
+\coorientador{\textless Nome do Co-orientador\textgreater}
+\coorientadorR{\textless Nome Reverso do Co-orientador\textgreater}
+%--------------------------------------------------------------------------%
+%[COORIENTADORA]-----------------------------------------------------------%
+%--------------------------------------------------------------------------%
+\coorientadora{\textless Nome da Co-orientadora\textgreater}
+\coorientadoraR{\textless Nome Reverso da Co-orientadora\textgreater}
+%--------------------------------------------------------------------------%
+%[INSTITUIÇÃO E PROGRAMA]--------------------------------------------------%
+%--------------------------------------------------------------------------%
+\universidade{Universidade Federal de Goiás}
+\uni{UFG}
+\unidade{Instituto de Matemática e Estatística}
+\departamento{\textless Nome do Departamento\textgreater} % Unidades com mais de um depto.
+\universidadeco{\textless Nome da Universidade do Co-orientador\textgreater}
+\unico{\textless Sigla da Universidade do Co-orientador\textgreater}
+\unidadeco{\textless Nome da Unidade acadêmica do Co-orientador\textgreater}
+\programa{Matemática}
+\concentracao{\textless Área de Concentração\textgreater}
+%--------------------------------------------------------------------------%
+%[ELEMENTOS PRÉ-TEXTUAIS]--------------------------------------------------%
+%--------------------------------------------------------------------------%
+\capa    % Gera o modelo da capa externa do trabalho
+\publica % Gera a autorizaÃ§Ã£o para publicaÃ§Ã£o em formato eletrÃ´nico
+\rosto   % Primeira folha interna do trabalho
+% \input{./pre/pre_aprovacao}
+\input{pre/pre_direitos}
+\input{pre/pre_dedicatoria}
+\input{pre/pre_agradecimentos}
+\input{pre/pre_epigrafe}
+\input{pre/pre_resumo}
+\input{pre/pre_abstract}
+%--------------------------------------------------------------------------%
+%--------------------------------------------------------------------------%
+%--------------------------------------------------------------------------%
+\tabelas[figtabalgcod]
+%OpÃ§Ãµes:
+%nada [] -> Gera apenas o sumário
+%fig     -> Gera o sumário e a lista de figuras
+%tab     -> Sumário e lista de tabelas
+%alg     -> Sumário e lista de algoritmos
+%cod     -> Sumário e lista de cídigos de programas
+%
+% Pode-se usar qualquer combinaÃ§Ã£o dessas opÃ§Ãµes.
+% Por exemplo:
+%  figtab       -> Sumário e listas de figuras e tabelas
+%  figtabcod    -> Sumário e listas de figuras, tabelas e
+%                  cídigos de programas
+%  figtabalg    -> Sumário e listas de figuras, tabelas e algoritmos
+%  figtabalgcod -> Sumário e listas de figuras, tabelas, algoritmos e
+%                  códigos de programas
+%--------------------------------------------------------------------------%
+%[CAPÍTULOS]---------------------------------------------------------------%
+%--------------------------------------------------------------------------%
+\input{chp/01}
+\input{chp/02}
+\input{chp/03}
+%--------------------------------------------------------------------------%
+%[BIBLIOGRAFIA]------------------------------------------------------------%
+%--------------------------------------------------------------------------%
+\cleardoublepage
+\arial
+\bibliography{ref/main}
+%--------------------------------------------------------------------------%
+%[APÊNDICES]---------------------------------------------------------------%
+%--------------------------------------------------------------------------%
+\apendices
+\input{pos/01}
+\input{pos/02}
+\end{document}
